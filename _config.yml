@@ -1,12 +1,16 @@
-# Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
- Кратенькое описание сайта.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
 
-# Build settings
+title: Khusamov ExtJS Library
+
+email: khusamov@yandex.ru
+
+description: >
+  На сайте размещена информация о моей библиотеке дополнительных компонент для ExtJS.
+  А также размещены разные статьи связанные с использованием ExtJS.
+
+baseurl: ""
+
+url: "http://khusamov.github.io/"
+
+github_username:  khusamov
+
 markdown: kramdown
