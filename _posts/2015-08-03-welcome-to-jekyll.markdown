@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  Вывод значения ComboBox которое находится на второй странице Store
 date:   2015-08-03 17:08:00
 categories: jekyll update
 ---
