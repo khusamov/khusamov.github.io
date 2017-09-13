@@ -1,11 +1,10 @@
 
-title: Khusamov ExtJS Library
+title: Khusamov Sukhrob
 
 email: khusamov@yandex.ru
 
 description: >
-  На сайте размещена информация о моей библиотеке дополнительных компонент для ExtJS.
-  А также размещены разные статьи связанные с использованием ExtJS.
+  Мои заметки по программированию.
 
 baseurl: ""
 
@@ -13,6 +12,6 @@ url: "http://khusamov.github.io/"
 
 github_username:  khusamov
 
-markdown: kramdown
+markdown: markdown-it
 
 theme: jekyll-theme-merlot
