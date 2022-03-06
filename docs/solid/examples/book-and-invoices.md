@@ -4,7 +4,7 @@
 Источник:
 https://techrocks.ru/2020/08/26/solid-principles-in-plain-russian/
 
-```typescript
+```typescript title='Код нарушил принцип единственной ответственности'
 class Book {
 	constructor(
 		public price: number,
@@ -39,7 +39,7 @@ class Invoice {
 
 Разделяем:
 
-```typescript
+```typescript title='Исправленный код'
 class Book {
 	constructor(
 		public price: number,
