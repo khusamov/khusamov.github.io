@@ -12,7 +12,7 @@ const projectName = 'khusamov.github.io' // Имя репозитория.
 const repoUrl = `https://github.com/${organizationName}/${projectName}`
 const editUrl = `${repoUrl}/tree/main`
 
-const customStyleFilename = './src/css/custom.css'
+const customStyleFilename = './src/css/custom.scss'
 const sidebarsFilename = './sidebars.js'
 
 const siteLogoSrc = 'https://icon-library.com/images/document_icon_png_401486.png'
@@ -25,6 +25,9 @@ const siteLogoSrc = 'https://icon-library.com/images/document_icon_png_401486.pn
  * @type {import('@docusaurus/types').PluginConfig[]}
  */
 const plugins = [
+	[
+		'docusaurus-plugin-sass', ({})
+	],
 	[
 		'@docusaurus/plugin-content-pages',
 		/**
