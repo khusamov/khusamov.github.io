@@ -58,6 +58,70 @@ export const links: TLink[] = [{
 		href: 'https://github.com/mrdoob/three.js/'
 	}]
 }, {
+	label: 'WYSIWYG-редакторы',
+	links: [{
+		label: 'TinyMCE',
+		tags: ['Мощный редактор'],
+		links: [{
+			label: 'Основной сайт TinyMCE',
+			href: 'https://www.tiny.cloud/'
+		}, {
+			label: 'React integration',
+			href: 'https://www.tiny.cloud/docs/integrations/react/'
+		}]
+	}, {
+		label: 'CKEditor',
+		tags: ['Мощный редактор'],
+		links: [{
+			label: 'Основной сайт CKEditor',
+			href: 'https://ckeditor.com/ckeditor-5/demo/#classic'
+		}, {
+			label: 'React integration',
+			href: 'https://ckeditor.com/docs/ckeditor5/latest/builds/guides/integration/frameworks/react.html#quick-start'
+		}]
+	}, {
+		label: 'React Email Editor',
+		tags: ['Мощный редактор'],
+		comment: 'Скорее для клиентуры подойдет',
+		links: [{
+			label: 'React Email Editor',
+			href: 'https://openbase.com/js/react-email-editor'
+		}, {
+			label: 'Демонстрация',
+			href: 'https://react-email-editor-demo.netlify.app/'
+		}, {
+			label: 'Исходный код',
+			href: 'https://github.com/unlayer/react-email-editor'
+		}]
+	}, {
+		label: 'Editor.js',
+		links: [{
+			label: 'Editor.js',
+			comment: 'Блочный редактор, есть React-декоратор',
+			href: 'https://editorjs.io/',
+		}, {
+			label: 'React Editor.js',
+			comment: 'React-декоратор для editorjs.io',
+			href: 'https://github.com/Jungwoo-An/react-editor-js'
+		}]
+	}, {
+		label: 'Редакторы на React.js',
+		comment: 'Можно взять за основу для своего редактора',
+		links: [{
+			label: 'ReactQuill',
+			comment: 'Редактор на React+TypeScript',
+			href: 'https://github.com/Jungwoo-An/react-editor-js'
+		}, {
+			label: 'Slate',
+			comment: 'Редактор на React',
+			href: 'https://github.com/ianstormtaylor/slate'
+		}, {
+			label: 'React Draft Wysiwyg',
+			comment: 'Редактор на React',
+			href: 'https://github.com/jpuri/react-draft-wysiwyg'
+		}]
+	}]
+}, {
 	label: 'Бесплатный хостинг для JavaScript-проектов',
 	links: [{
 		label: 'Vercel + Next.js',
