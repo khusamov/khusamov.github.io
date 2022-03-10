@@ -16,8 +16,7 @@ class Invoice {
 	constructor(
 		private book: Book,
 		private quantity: number
-	) {
-	}
+	) {}
 
 	public get total() {
         return this.book.price * this.quantity
@@ -32,12 +31,11 @@ class Invoice {
 }
 ```
 
-Класс Invoice cодержит три функции:
-1. Вычисление total
-2. Печать в консоль
-3. Сохранение в файле
+Причины изменения класса:
+1. Изменение подсчета стоимости (total)
+2. Изменение формата вывода данных (печать в консоль, сохранение в файле)
 
-Разделяем:
+Исправление класса будет таким: надо выделить вывод данных в отдельные классы.
 
 ```typescript title='Исправленный код'
 class Book {
@@ -51,8 +49,7 @@ class Invoice {
 	constructor(
 		public book: Book,
 		public quantity: number
-	) {
-	}
+	) {}
 
 	public get total() {
 		return this.book.price * this.quantity
