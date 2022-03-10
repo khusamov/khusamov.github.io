@@ -32,25 +32,47 @@ ol.LinkCollection {
 		text-decoration: none;
 	}
 	>li {
-		>a {
+		margin-bottom: 15px;
+		>a:not([href]) {
 			color: black;
 			font-weight: bold;
+		}
+		ol.SubLinkCollection {
+			li {
+				>a:not([href]) {
+					color: black;
+					font-weight: normal;
+				}
+			}
 		}
 	}
 
 	// Настройка ширины нумерации пунктов дерева.
-	>li {
-		&:before {
-			width: 18px;
-			display: inline-block;
+	>li:before { width: 18px; display: inline-block; }
+	ol.SubLinkCollection {
+		>li:before { width: 30px; display: inline-block; }
+		ol.SubLinkCollection {
+			>li:before { width: 43px; display: inline-block; }
+			ol.SubLinkCollection {
+				>li:before { width: 53px; display: inline-block; }
+			}
 		}
 	}
-	ol.SubLinkCollection {
-		>li {
-			&:before {
-				width: 30px;
-				display: inline-block;
-			}
+
+	.comment {
+		color: silver;
+		margin-left: 10px;
+	}
+
+	.tags {
+		span {
+			$tag-color: rgba(209, 0, 255, 0.61);
+			margin-left: 10px;
+			color: $tag-color;
+			font-size: 60%;
+			border: 1px solid $tag-color;
+			border-radius: 3px;
+			padding: 3px 8px;
 		}
 	}
 }
