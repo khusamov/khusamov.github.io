@@ -133,4 +133,11 @@ export const links: TLink[] = [{
 		label: 'Бесплатные хостинги для веб-разработчиков (на хабре)',
 		href: 'https://habr.com/ru/post/535168/'
 	}]
+}, {
+	label: 'Любопытные библиотеки',
+	links: [{
+		label: 'Стрелки',
+		comment: 'Пригодится для визуализации связей между сущностями',
+		href: 'https://github.com/steveruizok/perfect-arrows'
+	}]
 }]
