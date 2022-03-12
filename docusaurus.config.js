@@ -100,7 +100,7 @@ const navbar = ({
 	},
 	items: [
 		{
-			label: 'Руководство',
+			label: 'Инструкции',
 			type: 'docSidebar',
 			position: 'left',
 			sidebarId: 'tutorialSidebar',
