@@ -1,5 +1,7 @@
 import {TLink} from './TLink';
 
+// TODO Перенести Ссылки из docs в pages и поставить ссылку в главном меню
+
 export const links: TLink[] = [{
 	label: 'Unit-тестирование',
 	links: [{
@@ -137,7 +139,14 @@ export const links: TLink[] = [{
 	label: 'Любопытные библиотеки',
 	links: [{
 		label: 'Стрелки',
-		comment: 'Пригодится для визуализации связей между сущностями',
+		comment: 'Пригодится для визуализации связей между сущностями (например внешние ключи в СУБД)',
 		href: 'https://github.com/steveruizok/perfect-arrows'
+	}]
+}, {
+	label: 'Любопытные онлайн-инструменты',
+	links: [{
+		label: 'GeoGebra for Teaching and Learning Math',
+		comment: 'Мощный графический калькулятор',
+		href: 'https://www.geogebra.org/'
 	}]
 }]
