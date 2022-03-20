@@ -149,4 +149,23 @@ export const links: TLink[] = [{
 		comment: 'Мощный графический калькулятор',
 		href: 'https://www.geogebra.org/'
 	}]
+}, {
+	label: 'Сайты о программировании',
+	links: [{
+		label: 'Tproger',
+		comment: 'Издание о разработке и обо всём, что с ней связано',
+		href: 'https://tproger.ru/'
+	}, {
+		label: 'vc.ru',
+		comment: 'Стартапы, бизнес, технологии',
+		href: 'https://vc.ru/'
+	}, {
+		label: 'Рефакторинг.Гуру',
+		comment: 'Посвящён рефакторингу, паттернам проектирования, SOLID и другим темам по программированию',
+		href: 'https://refactoring.guru/ru'
+	}, {
+		label: 'SourceMaking.com',
+		comment: 'Аналог Рефакторинг.Гуру только на английском языке',
+		href: 'https://sourcemaking.com/'
+	}]
 }]
