@@ -9,6 +9,7 @@ const showLastUpdateTime = true
 
 const organizationName = 'khusamov' // Логин на GitHub.
 const projectName = 'khusamov.github.io' // Имя репозитория.
+const deploymentBranch = 'gh-pages' // Имя ветки репозитория куда развертывать сайт.
 const repoUrl = `https://github.com/${organizationName}/${projectName}`
 const editUrl = `${repoUrl}/tree/main`
 
@@ -272,7 +273,7 @@ module.exports = async function createConfig() {
 		titleDelimiter: '::',
 		organizationName,
 		projectName,
-		deploymentBranch: 'gh-pages',
+		deploymentBranch,
 		trailingSlash: false,
 		onBrokenLinks: 'throw',
 		onBrokenMarkdownLinks: 'warn',
