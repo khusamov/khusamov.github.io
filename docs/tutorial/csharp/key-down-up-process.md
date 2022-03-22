@@ -106,6 +106,8 @@ namespace WinForms_Tetris1
 {
 	internal class KeyUpDownProcessor
 	{
+		private bool _eventHandled;
+
 		/// <summary>
 		/// Данный словарь хранит информацию о том, была ли нажата клавиша.
 		/// В качестве ключа выступает номер клавиши, 
@@ -113,14 +115,14 @@ namespace WinForms_Tetris1
 		/// </summary>
 		Dictionary<int, bool> _theKeyWasDown = new();
 
-		public KeyUpDownProcessor()
+		public KeyUpDownProcessor(bool eventHandled = false)
 		{
-
+			_eventHandled = eventHandled;
 		}
 
 		public void OnKeyDown(KeyEventArgs @event, Action action)
 		{
-			@event.Handled = true;
+			@event.Handled = _eventHandled;
 
 			// Из события извлекаем номер нажатой клавиши.
 			int keyCode = @event.KeyValue;
@@ -144,11 +146,14 @@ namespace WinForms_Tetris1
 
 		public void OnKeyUp(KeyEventArgs @event, Action action)
 		{
-			@event.Handled = true;
+			@event.Handled = _eventHandled;
+
 			// Из события извлекаем номер нажатой клавиши.
 			int keyCode = @event.KeyValue;
+
 			// Помечаем что она уже не нажата.
 			_theKeyWasDown[keyCode] = false;
+
 			// Выполняем действие при отжатии клавиши.
 			action();
 		}
