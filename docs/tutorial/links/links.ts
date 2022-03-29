@@ -13,6 +13,10 @@ export const links: TLink[] = [{
 	}, {
 		label: 'Mocha',
 		href: 'https://mochajs.org/'
+	}, {
+		label: 'Sinon.js (надо посмотреть)',
+		comment: 'Автономные тестовые шпионы, заглушки и макеты для JavaScript. Работает с любым фреймворком модульного тестирования',
+		href: 'https://sinonjs.org/'
 	}]
 }, {
 	label: 'Библиотеки утверждений',
@@ -31,6 +35,13 @@ export const links: TLink[] = [{
 	}, {
 		label: 'Создаем собственный блог с помощью Next.js и Strapi',
 		href: 'https://bit.ly/3hKXhss'
+	}, {
+		label: 'Nest.js',
+		href: 'https://nestjs.com/'
+	}, {
+		label: 'Fastify',
+		comment: 'Аналог Express.js',
+		href: 'https://github.com/fastify/fastify'
 	}]
 }, {
 	label: 'Создание статических сайтов',
@@ -48,6 +59,7 @@ export const links: TLink[] = [{
 	label: 'Песочницы',
 	links: [{
 		label: 'Stack Blitz',
+		comment: 'Embeded-вариант красиво выглядит',
 		href: 'https://stackblitz.com/'
 	}, {
 		label: 'Code Sandbox',
@@ -167,5 +179,17 @@ export const links: TLink[] = [{
 		label: 'SourceMaking.com',
 		comment: 'Аналог Рефакторинг.Гуру только на английском языке',
 		href: 'https://sourcemaking.com/'
+	}]
+}, {
+	label: 'Dependency injection container and IoC container for TypeScript',
+	links: [{
+		label: 'TSyringe',
+		href: 'https://github.com/microsoft/tsyringe'
+	}, {
+		label: 'TTypescript IoC',
+		href: 'https://www.npmjs.com/package/typescript-ioc'
+	}, {
+		label: 'Inversify',
+		href: 'https://inversify.io/'
 	}]
 }]
