@@ -120,6 +120,11 @@ const navbar = ({
 			to: '/blog'
 		},
 		{
+			label: 'Репо',
+			position: 'left',
+			to: '/myrepos'
+		},
+		{
 			type: 'dropdown',
 			label: 'Проекты',
 			position: 'left',
