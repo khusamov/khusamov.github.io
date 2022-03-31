@@ -18,7 +18,8 @@ export const links: TLink[] = [{
 		label: 'Mocha',
 		href: 'https://mochajs.org/'
 	}, {
-		label: 'Sinon.js (надо посмотреть)',
+		label: 'Sinon.js',
+		tags: ['Надо посмотреть'],
 		comment: 'Автономные тестовые шпионы, заглушки и макеты для JavaScript. Работает с любым фреймворком модульного тестирования',
 		href: 'https://sinonjs.org/'
 	}]
@@ -177,7 +178,7 @@ export const links: TLink[] = [{
 		href: 'https://vc.ru/'
 	}, {
 		label: 'Рефакторинг.Гуру',
-		comment: 'Посвящён рефакторингу, паттернам проектирования, SOLID и другим темам по программированию',
+		comment: 'Рефакторинг, паттерны проектирования, SOLID',
 		href: 'https://refactoring.guru/ru'
 	}, {
 		label: 'SourceMaking.com',

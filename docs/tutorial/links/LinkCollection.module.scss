@@ -48,9 +48,9 @@ ol.LinkCollection {
 	}
 
 	// Настройка ширины нумерации пунктов дерева.
-	>li:before { width: 18px; display: inline-block; }
+	>li:before { width: 25px; display: inline-block; }
 	ol.SubLinkCollection {
-		>li:before { width: 30px; display: inline-block; }
+		>li:before { width: 38px; display: inline-block; }
 		ol.SubLinkCollection {
 			>li:before { width: 43px; display: inline-block; }
 			ol.SubLinkCollection {
