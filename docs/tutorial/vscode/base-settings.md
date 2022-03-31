@@ -1,5 +1,5 @@
-VS Code settings.json
-=====================
+Базовые настройки Visual Studio Code
+====================================
 
 ```json title='settings.json'
 {
