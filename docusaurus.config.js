@@ -125,6 +125,11 @@ const navbar = ({
 			to: '/myrepos'
 		},
 		{
+			label: 'Ссылки',
+			position: 'left',
+			to: '/links'
+		},
+		{
 			type: 'dropdown',
 			label: 'Проекты',
 			position: 'left',
