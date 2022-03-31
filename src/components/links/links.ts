@@ -1,7 +1,5 @@
 import {TLink} from './TLink';
 
-// TODO Перенести Ссылки из docs в pages и поставить ссылку в главном меню
-
 export const links: TLink[] = [{
 	label: 'learning-notes.mistermicheels.com',
 	comment: 'Аналог моего сайта с заметками',
