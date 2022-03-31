@@ -122,7 +122,7 @@ const navbar = ({
 		{
 			label: 'Репо',
 			position: 'left',
-			to: '/myrepos'
+			to: '/my/repositories'
 		},
 		{
 			label: 'Ссылки',
