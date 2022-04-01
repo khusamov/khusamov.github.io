@@ -1,6 +1,8 @@
 Базовый tsconfig.json
 =====================
 
+https://www.typescriptlang.org/tsconfig
+
 ```json title='tsconfig.json'
 {
 	"compilerOptions": {
