@@ -68,3 +68,4 @@ title: Введение
 
 https://www.udemy.com/course/solid-connascence/  
 https://futurio.ru/  
+https://proglib.academy/  
