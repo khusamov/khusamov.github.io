@@ -162,6 +162,8 @@ const footer = {
 	copyright: `
 			Copyright © 2021-${new Date().getFullYear()} ${siteTitle}. 
 			Сайт собран на Docusaurus.
+			<br/>
+			هرگز تسلیم نشو! سهراب!
 		`,
 	links: [
 		{
