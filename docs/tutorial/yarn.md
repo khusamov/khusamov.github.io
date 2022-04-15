@@ -1,0 +1,12 @@
+Yarn
+====
+
+
+```yaml
+enableMessageNames: false
+plugins:
+  - path: .yarn/plugins/@yarnpkg/plugin-workspace-tools.cjs
+    spec: "@yarnpkg/plugin-workspace-tools"
+  - path: .yarn/plugins/@yarnpkg/plugin-typescript.cjs
+    spec: "@yarnpkg/plugin-typescript"
+```
