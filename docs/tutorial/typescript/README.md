@@ -7,6 +7,18 @@ tsc --init
 npm init
 ```
 
+```
+yarn add --dev typescript
+yarn plugin import typescript
+tsc --init
+yarn init
+```
+
+При помощи команды `yarn plugin import typescript` вы можете включить плагин [Yarn TypeScript][plugin-typescript], 
+который помогает автоматически управлять зависимостями `@types/*`.
+
+[plugin-typescript]: https://github.com/yarnpkg/berry/tree/master/packages/plugin-typescript
+
 package.json
 ------------
 
