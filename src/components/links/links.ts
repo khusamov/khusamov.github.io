@@ -163,6 +163,10 @@ export const links: TLink[] = [{
 		label: 'GeoGebra for Teaching and Learning Math',
 		comment: 'Мощный графический калькулятор',
 		href: 'https://www.geogebra.org/'
+	}, {
+		label: 'Photopea',
+		comment: 'Аналог Photoshop',
+		href: 'https://www.photopea.com/'
 	}]
 }, {
 	label: 'Сайты о программировании',
