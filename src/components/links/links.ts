@@ -199,4 +199,11 @@ export const links: TLink[] = [{
 		label: 'Inversify',
 		href: 'https://inversify.io/'
 	}]
+}, {
+	label: 'Блоггеры программисты',
+	links: [{
+		label: 'Блог Сергея Теплякова',
+		comment: 'Про архитектуру и шаблоны проектирования',
+		href: 'http://sergeyteplyakov.blogspot.com/'
+	}]
 }]
