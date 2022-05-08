@@ -145,6 +145,10 @@ const navbar = ({
 				{
 					label: 'Генератор двумерных прайс-листов',
 					href: 'https://khusamov.github.io/price-list-2d-generator/'
+				},
+				{
+					label: 'Игра по мотивам занятий на Futurio.ru',
+					href: 'https://khusamov.github.io/solid-futurio-ru-game/'
 				}
 			]
 		}
