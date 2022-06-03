@@ -57,6 +57,9 @@ export const links: TLink[] = [{
 	}, {
 		label: 'Статический сайт на Next.js',
 		href: 'https://nextjs.org/docs/advanced-features/static-html-export'
+	}, {
+		label: '10 видов шаблонного кода на NextJS',
+		href: 'https://nuancesprog.ru/p/10874/#'
 	}]
 }, {
 	label: 'Песочницы',
@@ -167,6 +170,9 @@ export const links: TLink[] = [{
 		label: 'Photopea',
 		comment: 'Аналог Photoshop',
 		href: 'https://www.photopea.com/'
+	}, {
+		label: 'Бизнес Пак',
+		href: 'https://pvision.ru/bp/'
 	}]
 }, {
 	label: 'Сайты о программировании',
@@ -205,5 +211,15 @@ export const links: TLink[] = [{
 		label: 'Блог Сергея Теплякова',
 		comment: 'Про архитектуру и шаблоны проектирования',
 		href: 'http://sergeyteplyakov.blogspot.com/'
+	}, {
+		label: 'Поляков Константин Юрьевич',
+		comment: 'ЛамПанель, Сжатие данных, Машина Тьюринга, Управление судном, Чертёжник–Blockly',
+		href: 'https://kpolyakov.spb.ru/'
+	}]
+}, {
+	label: 'Разработка игр',
+	links: [{
+		label: 'GameDev.Ru',
+		href: 'https://gamedev.ru'
 	}]
 }]
