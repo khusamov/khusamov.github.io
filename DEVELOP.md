@@ -6,6 +6,8 @@ This website is built using [Docusaurus 2](https://docusaurus.io/), a modern sta
 Подготовка к разработке
 -----------------------
 
+Добавить переменную окружения `USE_SSH=true` на скрипт `deploy`.
+
 ```
 $ yarn
 ```
