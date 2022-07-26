@@ -149,6 +149,14 @@ const navbar = ({
 				{
 					label: 'Игра по мотивам занятий на Futurio.ru',
 					href: 'https://khusamov.github.io/solid-futurio-ru-game/'
+				},
+				{
+					label: 'Тестирование API веб-браузеров',
+					href: 'https://khusamov.github.io/web-browser-api-testing/'
+				},
+				{
+					label: 'Тестирование Box2d',
+					href: 'https://khusamov.github.io/box2d/'
 				}
 			]
 		}
@@ -240,8 +248,12 @@ async function createThemeConfig() {
 	 * @type {import('@docusaurus/preset-classic').ThemeConfig}
 	 */
 	return ({
-		hideableSidebar: false,
-		autoCollapseSidebarCategories: true,
+		docs: {
+			sidebar: {
+				autoCollapseCategories: true,
+				hideable: false
+			}
+		},
 		announcementBar,
 		navbar,
 		footer,
