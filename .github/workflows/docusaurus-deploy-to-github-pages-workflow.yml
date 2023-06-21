@@ -6,9 +6,12 @@ on:
   pull_request:
     branches: [ "main" ]
 
-jobs:
-  build:
+jobs:     
+  deploy:
     runs-on: ubuntu-latest
+    env:
+      GIT_USER: khusamov
+      USE_SSH: true
     steps:
       - uses: actions/checkout@v3
       
@@ -17,10 +20,10 @@ jobs:
 #           git config user.name Khusamov Sukhrob
 #           git config user.email khusamov@yandex.ru
       
-      - name: Переменные окружения для Docusaurus
-        run: |
-          export GIT_USER=khusamov
-          export USE_SSH=true
+#       - name: Переменные окружения для Docusaurus
+#         run: |
+#           export GIT_USER=khusamov
+#           export USE_SSH=true
       
       - name: Установить последнюю версию Yarn
         run: | 
