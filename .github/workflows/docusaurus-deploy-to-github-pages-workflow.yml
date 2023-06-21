@@ -1,13 +1,10 @@
-name: Публикация сайта Docusaurus на GitHub Pages
+name: GitHub Pages Deploy
 
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
-  # Позволяет запустить этот рабочий процесс вручную на вкладке Действия
-  workflow_dispatch:
 
 jobs:
   build:
@@ -24,6 +21,4 @@ jobs:
         run: yarn install
 
       - name: Опубликовать сайт на GitHub Pages
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+        run: yarn deploy
