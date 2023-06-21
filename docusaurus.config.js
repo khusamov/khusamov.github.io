@@ -284,6 +284,16 @@ const themes = [
 	]
 ]
 
+/**
+ * @type {import('@docusaurus/types').I18nConfig}
+ */
+const i18n = {
+	defaultLocale: 'ru',
+	locales: ['en', 'ru'],
+	localeConfigs: {},
+	path: 'docs'
+}
+
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 module.exports = async function createConfig() {
@@ -294,6 +304,7 @@ module.exports = async function createConfig() {
 	return {
 		title: siteTitle,
 		tagline,
+		i18n,
 		favicon: 'img/favicon.ico',
 		url: 'https://khusamov.github.io',
 		baseUrl: '/',
