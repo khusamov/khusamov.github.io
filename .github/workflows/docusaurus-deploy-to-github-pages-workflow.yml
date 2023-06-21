@@ -1,34 +1,30 @@
-name: GitHub Pages Deploy
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches: [main]
 
 jobs:     
   deploy:
     runs-on: ubuntu-latest
-    env:
-      GIT_USER: khusamov
-#       TOKEN: ${{secrets.TOKEN}}
-#       USE_SSH: true
     steps:
       - uses: actions/checkout@v3
       
-      - name: Git Setup
-        run: |
-          git config --global user.name "Khusamov Sukhrob"
-          git config --global user.email "khusamov@yandex.ru"
-          git remote set-url origin https://x-access-token:${{secrets.GITHUB_TOKEN}}@github.com/khusamov/khusamov.github.io.git
-            
-      - name: Установить последнюю версию Yarn
-        run: | 
-          yarn set version stable
-          yarn -v
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: yarn
 
-      - name: Установить все зависимости проекта
-        run: yarn install
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+        
+      - name: Build website
+        run: yarn build
 
-      - name: Опубликовать сайт на GitHub Pages
-        run: yarn deploy
+      # Popular action to deploy to GitHub Pages:
+      # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
