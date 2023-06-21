@@ -60,6 +60,16 @@ export const links: TLink[] = [{
 	}, {
 		label: '10 видов шаблонного кода на NextJS',
 		href: 'https://nuancesprog.ru/p/10874/#'
+	}, {
+		label: 'Система комментариев на основе GitHub Discussions',
+		comment: 'Аутентификация только через GitHub',
+		links: [{
+			label: 'Сайт Giscus',
+			href: 'https://giscus.app/ru'
+		}, {
+			label: 'Репозиторий Giscus',
+			href: 'https://github.com/giscus/giscus'
+		}]
 	}]
 }, {
 	label: 'Песочницы',
