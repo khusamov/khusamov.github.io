@@ -20,7 +20,7 @@ jobs:
         run: |
           git config --global user.name "Khusamov Sukhrob"
           git config --global user.email "khusamov@yandex.ru"
-          git remote set-url --push origin https://khusamov:${{secrets.GITHUB_TOKEN}}@github.com/khusamov/khusamov.github.io.git
+          git remote set-url origin https://x-access-token:${{secrets.GITHUB_TOKEN}}@github.com/khusamov/khusamov.github.io.git
             
       - name: Установить последнюю версию Yarn
         run: | 
