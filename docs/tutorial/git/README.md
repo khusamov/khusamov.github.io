@@ -34,6 +34,23 @@ https://github.com/petervanderdoes/gitflow-avh
 brew install git-flow-avh
 ```
 
+Проблема с окончанием строк в текстовых файлах
+----------------------------------------------
+
+Сборщик проекта может выдавать ошибку, связанную с тем, как заканчиваются строки в файлах (CRLF или LF).
+И если сборщик ожидает LF, а в файлах окончания строк CRLF, то собраться такой проект не сможет.
+Эта проблема актуальна в основном для `Windows`. Для решения этой проблемы нужно клонировать
+репозиторий с отключенной опцией `core.autocrlf`:
+
+```
+git clone -c core.autocrlf=false <Адрес репо>
+```
+
+В среде IDEA следует для проекта установить опцию `File / Settings / Editor / Code Style / Line separator`
+в значение `Unix and macOS (/n)`, чтобы новые файлы создавались с правильными окончаниями строк.
+
+Возможно эту проблему решит настройка файла `.gitattributes` (но это надо проверять.):
+https://docs.github.com/ru/get-started/getting-started-with-git/configuring-git-to-handle-line-endings
 
 Ссылки
 ------
