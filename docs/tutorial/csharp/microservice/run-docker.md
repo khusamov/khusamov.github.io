@@ -14,7 +14,7 @@ docker run -it --rm -p 3000:80 --name mymicroservicecontainer mymicroservice
 Вы можете перейти по следующему URL-адресу, чтобы получить доступ к вашему приложению, 
 работающему в контейнере:http://localhost:3000/WeatherForecast
 
-![run-docker.png](run-docker.png)
+![run-docker.png](images/run-docker.png)
 
 При желании вы можете просмотреть свой контейнер, работающий в отдельной командной строке, используя следующую команду:
 

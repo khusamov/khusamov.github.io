@@ -31,5 +31,5 @@ Content root path: C:\Users\Ana\MyMicroservice\
 В этом примере показано, что прослушивается порт 5020, поэтому на следующем изображении 
 показан URL-адрес http://localhost:5020/WeatherForecast.
 
-![run](run-microservice.png)
+![run](images/run-microservice.png)
 
