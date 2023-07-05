@@ -98,3 +98,8 @@ Visual Studio следует настроить при помощи Visual Studi
 После этого в окне "Создание проекта" будет доступен шаблон приложений "Веб-API ASP.NET Core (Майкрософт)".
 
 ![create-microservice-2](images/create-microservice-2.png)
+
+Подробнее читайте в статье:  
+[Рабочий процесс разработки для приложений Docker][docker-app-development-workflow]
+
+[docker-app-development-workflow]: https://learn.microsoft.com/ru-ru/dotnet/architecture/microservices/docker-application-development-process/docker-app-development-workflow
