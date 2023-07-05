@@ -264,7 +264,7 @@ async function createThemeConfig() {
 			theme: require('prism-react-renderer/themes/github'),
 			darkTheme: require('prism-react-renderer/themes/dracula'),
 			// https://docusaurus.io/docs/markdown-features/code-blocks#supported-languages
-			additionalLanguages: ['typescript', 'csharp'],
+			additionalLanguages: ['typescript', 'csharp', 'docker', 'bash'],
 			defaultLanguage: 'typescript'
 		}
 	})
