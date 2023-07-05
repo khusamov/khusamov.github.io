@@ -86,3 +86,15 @@ public class WeatherForecastController : ControllerBase
     }
 }
 ```
+
+Создание микросервиса в Visual Studio
+-------------------------------------
+
+Visual Studio следует настроить при помощи Visual Studio Installer добавив в него 
+набор компонент "ASP.NET и разработка веб-приложений".
+
+![create-microservice-1](images/create-microservice-1.png)
+
+После этого в окне "Создание проекта" будет доступен шаблон приложений "Веб-API ASP.NET Core (Майкрософт)".
+
+![create-microservice-2](images/create-microservice-2.png)
