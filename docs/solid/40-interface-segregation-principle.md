@@ -70,4 +70,4 @@ class Rectangle implements IRectangle {
 Ссылки
 ------
 
-[Видео от Сергея Немчинского](https://www.youtube.com/watch?v=d9RJqf2o_Sw)  
+[Принцип Разделения Интерфейса от Сергея Немчинского](https://www.youtube.com/watch?v=d9RJqf2o_Sw)
