@@ -1,4 +1,4 @@
-import {TLink} from './TLink';
+import {TLink} from '@site/src/types/TLink'
 
 export const links: TLink[] = [{
 	label: 'learning-notes.mistermicheels.com',
