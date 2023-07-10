@@ -177,6 +177,10 @@ export const links: TLink[] = [{
 		comment: 'Мощный графический калькулятор',
 		href: 'https://www.geogebra.org/'
 	}, {
+		label: 'Desmos',
+		comment: 'Более быстрый аналог GeoGebra',
+		href: 'https://www.desmos.com/?lang=ru'
+	}, {
 		label: 'Photopea',
 		comment: 'Аналог Photoshop',
 		href: 'https://www.photopea.com/'
@@ -204,7 +208,7 @@ export const links: TLink[] = [{
 		href: 'https://sourcemaking.com/'
 	}]
 }, {
-	label: 'Dependency injection container and IoC container for TypeScript',
+	label: 'IoC для TypeScript',
 	links: [{
 		label: 'TSyringe',
 		href: 'https://github.com/microsoft/tsyringe'
@@ -231,5 +235,9 @@ export const links: TLink[] = [{
 	links: [{
 		label: 'GameDev.Ru',
 		href: 'https://gamedev.ru'
+	}, {
+		label: 'Элита',
+		comment: 'Эмулятор старых игр с базой игр',
+		href: 'https://virtual.bbcmic.ro/?disc1=elite.ssd&autoboot'
 	}]
 }]

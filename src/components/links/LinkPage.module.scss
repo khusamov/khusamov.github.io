@@ -1,0 +1,30 @@
+$active-link-color: #bebebe;
+
+.Page {
+	display: flex;
+
+	>div:not(:last-child) {
+		border-right: 1px solid $active-link-color;
+	}
+
+	>div:last-child {
+		padding-left: 20px;
+	}
+
+	.Menu {
+		flex: 1 1 0;
+		.item {
+			padding: 3px 20px;
+			&.link {
+				cursor: pointer;
+				&.active {
+					background-color: lighten($active-link-color, 20%);
+				}
+			}
+		}
+	}
+
+	.LinkBlock {
+		flex: 2 1 0;
+	}
+}
