@@ -1,6 +1,6 @@
 import styles from '@site/src/pages/my/repositories/index.module.scss'
-import {RepoTable} from '@site/src/pages/my/repositories/RepoTable'
-import {repoListAddress, Gihub} from '@site/src/pages/my/repositories/gihub'
+import {RepoTable} from '@site/src/components/repo/RepoTable'
+import {repoListAddress, Gihub} from '@site/src/components/repo/gihub'
 import React, {Fragment} from 'react'
 import {useFetch} from 'use-http'
 

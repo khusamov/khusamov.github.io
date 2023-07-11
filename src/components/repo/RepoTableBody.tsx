@@ -1,5 +1,5 @@
-import {RepoTableRow} from '@site/src/pages/my/repositories/RepoTableRow'
-import {Gihub} from '@site/src/pages/my/repositories/gihub'
+import {RepoTableRow} from '@site/src/components/repo/RepoTableRow'
+import {Gihub} from '@site/src/components/repo/gihub'
 import React from 'react'
 
 export const RepoTableBody = (

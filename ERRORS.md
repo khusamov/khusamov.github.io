@@ -23,3 +23,10 @@ Consider default-exporting a React component.
     at Array.forEach (<anonymous>)
 Error: The page component at /my/rep...
 ```
+
+Решение: Компоненты нужно переместить в директорию `src/components`.
+
+Дело в том, что в директории `src/pages` могут хранится только файлы `index.module.scss` и `index.tsx`. 
+Здесь нельзя хранить файлы отдельных компонент и файлы констант и типов. Все это будет восприниматься
+движком как страницы, а не как отдельные компоненты.
+

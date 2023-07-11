@@ -1,4 +1,4 @@
-import {Gihub} from '@site/src/pages/my/repositories/gihub'
+import {Gihub} from '@site/src/components/repo/gihub'
 import React from 'react'
 
 const pagesAddress = (name: string) => {
