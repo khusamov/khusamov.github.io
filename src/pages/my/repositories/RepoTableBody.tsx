@@ -1,13 +1,13 @@
-import {IRepoInfo} from '@site/src/pages/my/repositories/IRepoInfo'
 import {RepoTableRow} from '@site/src/pages/my/repositories/RepoTableRow'
+import {Gihub} from '@site/src/pages/my/repositories/gihub'
 import React from 'react'
 
 export const RepoTableBody = (
-	({items}: {items: IRepoInfo[]}) => (
+	({ items }: { items: Gihub[] }) => (
 		<tbody>
 			{
 				items.map(
-					(item: any) => <RepoTableRow item={item}/>
+					(item: any, index) => <RepoTableRow key={index} item={item} index={index}/>
 				)
 			}
 		</tbody>

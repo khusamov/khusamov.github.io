@@ -6,8 +6,22 @@
 		bottom: 30px;
 	}
 
+	.topics {
+		margin: 20px 0;
+	}
+
+	.languages {
+		margin: 20px 0;
+	}
+
 	table {
 		display: table;
 		width: 100%;
+
+		thead {
+			th {
+				white-space: nowrap;
+			}
+		}
 	}
 }

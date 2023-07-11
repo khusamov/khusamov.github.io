@@ -2369,6 +2369,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@octokit/openapi-types@npm:^18.0.0":
+  version: 18.0.0
+  resolution: "@octokit/openapi-types@npm:18.0.0"
+  checksum: d487d6c6c1965e583eee417d567e4fe3357a98953fc49bce1a88487e7908e9b5dbb3e98f60dfa340e23b1792725fbc006295aea071c5667a813b9c098185b56f
+  languageName: node
+  linkType: hard
+
+"@octokit/types@npm:^11.1.0":
+  version: 11.1.0
+  resolution: "@octokit/types@npm:11.1.0"
+  dependencies:
+    "@octokit/openapi-types": ^18.0.0
+  checksum: 72627a94ddaf7bc14db06572bcde67649aad608cd86548818380db9305f4c0ca9ca078a62dd883858a267e8ec8fd596a0fce416aa04197c439b9548efef609a7
+  languageName: node
+  linkType: hard
+
 "@pkgjs/parseargs@npm:^0.11.0":
   version: 0.11.0
   resolution: "@pkgjs/parseargs@npm:0.11.0"
@@ -7359,6 +7375,7 @@ __metadata:
     "@docusaurus/preset-classic": ^2.4.1
     "@docusaurus/theme-classic": ^2.4.1
     "@mdx-js/react": ^1.6.22
+    "@octokit/types": ^11.1.0
     "@tsconfig/docusaurus": ^1.0.7
     classnames: ^2.3.2
     clsx: ^1.2.1
