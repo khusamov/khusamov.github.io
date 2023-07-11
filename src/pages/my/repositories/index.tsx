@@ -1,5 +1,5 @@
-import {MyRepoTable} from '@site/src/pages/my/repositories/MyRepoTable'
-import {TUserInfo, userInfoAddress} from '@site/src/pages/my/repositories/gihub'
+import {MyRepoTable} from '@site/src/components/repo/MyRepoTable'
+import {TUserInfo, userInfoAddress} from '@site/src/components/repo/gihub'
 import Layout from '@theme/Layout'
 import React from 'react'
 import {useFetch} from 'use-http'

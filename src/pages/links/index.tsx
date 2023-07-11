@@ -1,7 +1,7 @@
 import LinkPage from '@site/src/components/links/LinkPage'
 import React from 'react';
 import Layout from '@theme/Layout';
-import {links} from './links';
+import {links} from '../../components/links';
 import styles from './index.module.scss';
 
 export default function() {
