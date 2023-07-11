@@ -10,6 +10,7 @@ export const RepoTableHead = (
 				<th>Язык</th>
 				<th>Размер, кб</th>
 				<th>Описание</th>
+				<th>GitHub Pages</th>
 			</tr>
 		</thead>
 	)
