@@ -1,5 +1,5 @@
 import React from 'react'
-import {TLink} from './TLink';
+import {TLink} from '../../types/TLink';
 import styles from './LinkCollection.module.scss';
 
 type TLinkCollectionProps = {

@@ -40,21 +40,6 @@ const plugins = [
 		})
 	],
 	[
-		'@docusaurus/plugin-content-blog',
-		/**
-		 * @link https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog
-		 * @type {import('@docusaurus/plugin-content-blog').Options}
-		 */
-		({
-			blogTitle: 'Docusaurus blog!',
-			blogDescription: 'A Docusaurus powered blog!',
-			postsPerPage: 'ALL',
-			blogSidebarTitle: 'Статьи журнала',
-			showReadingTime: true,
-			editUrl
-		})
-	],
-	[
 		'@docusaurus/plugin-content-docs',
 		/**
 		 * @link https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs
@@ -96,7 +81,7 @@ const navbar = ({
 	title: siteTitle,
 	hideOnScroll: true,
 	logo: {
-		alt: 'My Site Logo',
+		alt: siteTitle,
 		src: siteLogoSrc
 	},
 	items: [
@@ -115,16 +100,6 @@ const navbar = ({
 			docsPluginId: 'solid'
 		},
 		{
-			label: 'Журнал',
-			position: 'left',
-			to: '/blog'
-		},
-		{
-			label: 'Репо',
-			position: 'left',
-			to: '/my/repositories'
-		},
-		{
 			label: 'Ссылки',
 			position: 'left',
 			to: '/links'
@@ -135,12 +110,8 @@ const navbar = ({
 			position: 'left',
 			items: [
 				{
-					label: 'Удаление файлов Facebook',
-					href: 'https://www.facebook.com',
-				},
-				{
-					label: 'Яндекс своими руками',
-					href: 'https://www.yandex.com',
+					label: 'Мои публичные репозитории',
+					to: '/my/repositories'
 				},
 				{
 					label: 'Генератор двумерных прайс-листов',
@@ -157,6 +128,10 @@ const navbar = ({
 				{
 					label: 'Тестирование Box2d',
 					href: 'https://khusamov.github.io/box2d/'
+				},
+				{
+					label: 'Мой первый калькулятор шкафов-купе',
+					href: 'http://khusamov.github.io/wardrobe-calculator/'
 				}
 			]
 		}
@@ -172,26 +147,16 @@ const navbar = ({
 const footer = {
 	style: 'dark',
 	copyright: `
-			Copyright © 2021-${new Date().getFullYear()} ${siteTitle}. 
-			Сайт собран на Docusaurus.
-			<br/>
-			هرگز تسلیم نشو! سهراب!
-		`,
+		Copyright © 2021-${new Date().getFullYear()} ${siteTitle}.
+		<br/>
+		هرگز تسلیم نشو! سهراب!
+	`,
 	links: [
 		{
-			title: 'Документация',
+			title: 'Связь с автором',
 			items: [
 				{
-					label: 'Tutorial',
-					to: '/tutorial/intro'
-				}
-			]
-		},
-		{
-			title: 'Контакты',
-			items: [
-				{
-					label: 'Головной сайт',
+					label: 'Главсайт',
 					href: 'http://khusamov.ru/'
 				},
 				{
@@ -208,12 +173,12 @@ const footer = {
 			title: 'Дополнительно',
 			items: [
 				{
-					label: 'Журнал',
-					to: '/blog'
-				},
-				{
 					label: 'GitHub',
 					href: repoUrl
+				},
+				{
+					label: 'Сайт собран на Docusaurus',
+					href: 'https://docusaurus.io/'
 				}
 			]
 		}
@@ -223,6 +188,7 @@ const footer = {
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 /**
+ * @link https://docusaurus.io/docs/api/themes/configuration#announcement-bar
  * @type {import('@docusaurus/preset-classic').ThemeConfig}
  */
 const {announcementBar} = ({

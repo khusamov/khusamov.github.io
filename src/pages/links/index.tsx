@@ -1,14 +1,15 @@
+import LinkPage from '@site/src/components/links/LinkPage'
 import React from 'react';
 import Layout from '@theme/Layout';
-import LinkCollection from '../../components/links/LinkCollection';
-import {links} from '../../components/links/links';
+import {links} from './links';
 import styles from './index.module.scss';
 
 export default function() {
 	return (
 		<Layout>
 			<div className={styles.layout}>
-				<LinkCollection links={links}/>
+				<h1>Мои личные ссылки</h1>
+				<LinkPage links={links}/>
 			</div>
 		</Layout>
 	)
