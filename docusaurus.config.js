@@ -128,6 +128,10 @@ const navbar = ({
 				{
 					label: 'Тестирование Box2d',
 					href: 'https://khusamov.github.io/box2d/'
+				},
+				{
+					label: 'Мой первый калькулятор шкафов-купе',
+					href: 'http://khusamov.github.io/wardrobe-calculator/'
 				}
 			]
 		}
