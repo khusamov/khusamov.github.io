@@ -19,6 +19,12 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Установить последнюю версию Yarn
+        run: |
+          corepack enable
+          yarn set version stable
+          yarn -v
+
       - name: Get yarn cache
         id: yarn-cache
         run: echo "YARN_CACHE_DIR=$(yarn cache dir)" >> "${GITHUB_OUTPUT}"
@@ -30,13 +36,7 @@ jobs:
           key: ${{ runner.os }}-website-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-website-
-      
-      - name: Установить последнюю версию Yarn
-        run: |
-          corepack enable
-          yarn set version stable
-          yarn -v
-      
+
       - name: Установка всех зависимостей сайта
         run: yarn install --immutable
         
