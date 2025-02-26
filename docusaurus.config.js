@@ -1,5 +1,7 @@
 // @ts-check
 
+import {themes as prismThemes} from 'prism-react-renderer'
+
 const siteTitle = 'Technical Document'
 const tagline = 'Техническая документация'
 
@@ -227,8 +229,8 @@ async function createThemeConfig() {
 		 * @link https://docusaurus.io/docs/api/themes/configuration#codeblock
 		 */
 		prism: {
-			theme: require('prism-react-renderer/themes/github'),
-			darkTheme: require('prism-react-renderer/themes/dracula'),
+			theme: prismThemes.github,
+			darkTheme: prismThemes.dracula,
 			// https://docusaurus.io/docs/markdown-features/code-blocks#supported-languages
 			additionalLanguages: ['typescript', 'csharp', 'docker', 'bash'],
 			defaultLanguage: 'typescript'
