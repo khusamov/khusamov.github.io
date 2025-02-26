@@ -21,7 +21,10 @@ jobs:
           node-version: 22
 
       - name: Install Yarn
-        run: corepack enable | corepack prepare yarn@stable --activate
+        run:
+          corepack enable | corepack prepare yarn@stable --activate
+          yarn set version stable
+          yarn -v
 
       - uses: actions/setup-node@v4
         with:
