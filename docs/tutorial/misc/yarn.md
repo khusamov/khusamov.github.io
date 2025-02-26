@@ -4,13 +4,13 @@ Yarn
 Установка Yarn
 --------------
 
-Node.js >=16.10
+Node.js больше или равно 16.10
 
 ```
 corepack enable
 ```
 
-Node.js <16.10
+Node.js меньше 16.10
 
 ```
 npm i -g corepack
