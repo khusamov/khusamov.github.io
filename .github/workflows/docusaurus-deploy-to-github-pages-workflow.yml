@@ -16,7 +16,7 @@ jobs:
           yarn -v
       
       - name: Установка всех зависимостей сайта
-        run: yarn install --frozen-lockfile
+        run: yarn install --immutable
         
       - name: Сборка сайта
         run: yarn build
