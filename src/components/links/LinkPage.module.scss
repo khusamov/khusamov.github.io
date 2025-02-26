@@ -1,3 +1,5 @@
+@use "sass:color";
+
 $active-link-color: #bebebe;
 
 .Page {
@@ -18,7 +20,7 @@ $active-link-color: #bebebe;
 			&.link {
 				cursor: pointer;
 				&.active {
-					background-color: lighten($active-link-color, 20%);
+					background-color: color.adjust($active-link-color, $lightness: 20%);
 				}
 			}
 		}
